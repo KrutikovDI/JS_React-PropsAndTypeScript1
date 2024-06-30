@@ -1,9 +1,13 @@
 import React from 'react';
 import { Star } from '../Star/Star'
-import './stars.module.css'
+import './stars.css'
 
 
-export const Stars = (count: number):React.ReactNode => {
+interface StarsProps {
+  count: number,
+}
+
+export const Stars = ({count}: StarsProps) => {
     let view;
     if (typeof count == 'number' && 0 < count && count < 6) {
         view = true

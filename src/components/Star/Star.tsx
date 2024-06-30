@@ -1,10 +1,6 @@
 import React from "react"
 
-interface IStar {
-  (): React.ReactNode
-}
-
-export const Star: IStar = () => {
+export const Star = () => {
   return (
     <>
         <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
